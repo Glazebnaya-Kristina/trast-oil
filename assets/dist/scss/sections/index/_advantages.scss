@@ -29,15 +29,18 @@
 
   &__list{
     @include ul-reset;
-    //display: flex;
-    display: grid;
-    grid-gap: 20px 10px;
-    //grid-template-columns: repeat(12, 105px);
-    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -6px;
+    @media (min-width: $screen-lg) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__item{
+    flex-basis: 330px;
+    flex-grow: 1;
+    margin: 6px;
   }
 
   &__value{
@@ -57,10 +60,14 @@
       margin-top: -15px;
       font-family: 'TacticSans-Bld';
       color: $color-red-1;
-      font-size: 45px;
+      font-size: 20px;
+      @media (min-width: $screen-lg) {
+        font-size: 30px;
+      }
       @media (min-width: $screen-xl) {
         margin-right: -29px;
         padding-left: 21px;
+        font-size: 45px;
       }
     }
   }

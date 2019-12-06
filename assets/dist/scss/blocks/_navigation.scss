@@ -2,33 +2,48 @@
   $block-name:                &; // #{$block-name}__element
 
 
-  display: grid;
-  grid-row-gap: 10px;
   width: 100%;
   @media (min-width: $screen-md) {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
   }
   @media (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
+
+  .navigation__wrapper {
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-left: auto;
+      max-width: 851px;
+    }
+    @media (min-width: $screen-xl) {
+      max-width: none;
+      margin-left: 0;
+    }
+  }
+
   &__list{
     @include ul-reset;
-    justify-self: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 285px;
+    margin: 0 auto;
+    margin-top: 15px;
 
     @media (min-width: $screen-md) {
-      grid-column: 2 / -1;
-      justify-self: end;
       max-width: none;
+      margin-top: 0;
     }
 
     @media (min-width: 1200px) {
+      margin: 0;
       margin-left: 7px;
     }
 

@@ -1,13 +1,25 @@
 .title {
   margin: 0;
-  font-family: 'Cormorant Garamond';
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
+  font-family: 'TacticSans-Bld';
+  font-size: 25px;
+  color: $color-title;
   @media (min-width: $screen-md) {
-    font-size: 35px;
+    font-size: 30px;
   }
   @media (min-width: $screen-xl) {
-    font-size: 50px;
+    font-size: 40px;
+  }
+
+  &--line{
+    position: relative;
+    padding-top: 25px;
+    &:before{
+      @include pseudo;
+      top: 0;
+      left: 0;
+      width: 37px;
+      height: 3px;
+      background-color: $color-red;
+    }
   }
 }

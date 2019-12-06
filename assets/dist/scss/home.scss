@@ -1,5 +1,6 @@
 // Подключения блоков
 //@import "blocks/time-flag";
+@import "blocks/content-box";
 
 // поключения библиотек
 //@import "libs/title";
@@ -11,6 +12,7 @@
 
 // поключения секций
 @import "sections/index/advantages";
+@import "sections/index/about-us";
 
 
 //@media (min-width: $screen-sm) {}

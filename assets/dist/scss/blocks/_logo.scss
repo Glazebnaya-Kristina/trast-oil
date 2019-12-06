@@ -10,6 +10,9 @@
   @media (min-width: 1200px) {
     max-width: 220px;
   }
+  @media (min-width: $screen-xl) {
+    margin-right: 119px;
+  }
   &__name{
     @include hide-text;
   }

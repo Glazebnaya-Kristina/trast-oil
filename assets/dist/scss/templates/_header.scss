@@ -16,24 +16,30 @@
 
   &__clock{
    @include ul-reset;
+    margin-top: 15px;
     text-align: center;
     @media (min-width: $screen-md) {
-      grid-column: 3 / -1;
-      justify-self: end;
       font-size: 16px;
-      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
     }
     @media (min-width: 1200px) {
       margin-right: -13px;
+      margin-top: 0;
     }
   }
 
   &__info-block{
     text-align: center;
+    margin-top: 15px;
     @media (min-width: $screen-md) {
-      grid-column: 3 / -1;
-      justify-self: end;
-      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    @media (min-width: 1200px) {
+      margin-top: 0;
     }
   }
 
