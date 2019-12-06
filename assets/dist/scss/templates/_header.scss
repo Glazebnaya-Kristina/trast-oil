@@ -1,0 +1,84 @@
+@import "../helper/container-mixins";
+@import "../helper/variables";
+@import "../helper/mixins";
+
+.header {
+  $block-name:                &; // #{$block-name}__element
+
+
+  padding: 8px;
+  color: $white;
+  background-color: $colo-dark-2;
+  &__inner{
+    @include container;
+    display: flex;
+  }
+
+  &__clock{
+   @include ul-reset;
+    text-align: center;
+    @media (min-width: $screen-md) {
+      grid-column: 3 / -1;
+      justify-self: end;
+      font-size: 16px;
+      text-align: left;
+    }
+    @media (min-width: 1200px) {
+      margin-right: -13px;
+    }
+  }
+
+  &__info-block{
+    text-align: center;
+    @media (min-width: $screen-md) {
+      grid-column: 3 / -1;
+      justify-self: end;
+      text-align: left;
+    }
+  }
+
+  &__wrapper-telephone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: $screen-md) {
+      justify-content: flex-start;
+    }
+    @media (min-width: 1200px) {
+      padding-right: 10px;
+    }
+    i{
+      font-size: 15px;
+      color: $color-red;
+    }
+  }
+
+  &__telephone{
+    margin-left: 10px;
+    font-weight: 700;
+    @include link(inherit, $color-red);
+    @media (min-width: $screen-md) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+
+  &__consultation{
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid $white;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: $transition-time;
+    @media (min-width: $screen-md) {
+      font-size: 16px;
+      line-height: 13px;
+    }
+    &:focus,
+    &:hover{
+      color: $color-red;
+      border-bottom: 1px solid $color-red;
+    }
+  }
+}
