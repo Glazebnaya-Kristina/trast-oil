@@ -33,6 +33,18 @@
   max-width: 270px;
   padding: 13px 0;
   overflow: hidden;
+  cursor: pointer;
+
+  &:hover,
+  &:active{
+    outline: none;
+    &:after{
+      background-color: $color-red-hover;
+    }
+    &:before{
+      background-color: $colo-black-dark;
+    }
+  }
 
   &:after {
     @include pseudo;
@@ -40,10 +52,11 @@
     top: 0;
     width: 205px;
     height: 45px;
-    background-color: red;
+    background-color: $color-red;
     transform: skew(-20deg);
     transform-origin: 0 0;
     z-index: 1;
+    transition: $transition-time;
   }
 
   &:before {
@@ -56,6 +69,7 @@
     transform: skew(-20deg);
     transform-origin: 0 0;
     z-index: 0;
+    transition: $transition-time;
   }
 
   &__button {
@@ -64,6 +78,7 @@
     font-size: 18px;
     border: none;
     background-color: transparent;
+    cursor: pointer;
   }
 
   i{
