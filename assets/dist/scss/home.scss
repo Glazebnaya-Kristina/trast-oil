@@ -1,9 +1,10 @@
 // Подключения блоков
 //@import "blocks/time-flag";
 @import "blocks/content-box";
+@import "blocks/button-arrow";
 
 // поключения библиотек
-//@import "libs/title";
+@import "libs/slick";
 // стили шаблонов
 
 // стили шаблонов
@@ -13,6 +14,7 @@
 // поключения секций
 @import "sections/index/advantages";
 @import "sections/index/about-us";
+@import "sections/index/reviews";
 
 
 //@media (min-width: $screen-sm) {}
