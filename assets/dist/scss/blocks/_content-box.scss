@@ -4,4 +4,26 @@
 
 .content-box{
   $block-name:                &; // #{$block-name}__element
+
+
+
+  @media (min-width: $screen-lg) {
+    max-width: 470px;
+  }
+  @media (min-width: $screen-xl) {
+    max-width: 565px;
+  }
+  &__title{
+    margin-bottom: 40px;
+    @media (min-width: $screen-xl) {
+      margin-bottom: 53px;
+    }
+  }
+
+  p{
+    line-height: 30px;
+    &:not(:first-child){
+      margin-top: 20px;
+    }
+  }
 }
