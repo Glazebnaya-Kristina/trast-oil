@@ -6,7 +6,7 @@
   $block-name:                &; // #{$block-name}__element
 
 
-  padding: 8px;
+  padding: 8px 0;
   color: $white;
   background-color: $colo-dark-2;
   &__inner{
@@ -24,7 +24,7 @@
       flex-direction: column;
       align-items: flex-end;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: $screen-xl) {
       margin-right: -13px;
       margin-top: 0;
     }
@@ -38,7 +38,7 @@
       flex-direction: column;
       align-items: flex-end;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: $screen-xl) {
       margin-top: 0;
     }
   }
@@ -50,7 +50,7 @@
     @media (min-width: $screen-md) {
       justify-content: flex-start;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: $screen-xl) {
       padding-right: 10px;
     }
     i{

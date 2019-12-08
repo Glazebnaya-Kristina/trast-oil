@@ -7,13 +7,13 @@
     display: flex;
     justify-content: space-between;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: $screen-xl) {
     display: flex;
     justify-content: space-between;
   }
 
   .navigation__wrapper {
-    @media (min-width: 1200px) {
+    @media (min-width: $screen-xl) {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -42,7 +42,7 @@
       margin-top: 0;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: $screen-xl) {
       margin: 0;
       margin-left: 7px;
     }
