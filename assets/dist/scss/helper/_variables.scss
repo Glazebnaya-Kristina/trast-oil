@@ -8,8 +8,8 @@ $screen-xl:                   1435px;
 //$screen-xxl:                  1800px;
 
 $container-sm:                100%;
-$container-md:                100%;
-$container-lg:                100%;
+$container-md:                $screen-md;
+$container-lg:                $screen-lg;
 $container-xl:                1370px;
 //$container-xxl:               $screen-xxl - 30;
 
