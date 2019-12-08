@@ -57,11 +57,12 @@
       font-size: 72px;
     }
     span{
-      margin-top: -15px;
+      margin-top: -5px;
       font-family: 'TacticSans-Bld';
       color: $color-red-1;
       font-size: 20px;
       @media (min-width: $screen-lg) {
+        margin-top: -15px;
         font-size: 30px;
       }
       @media (min-width: $screen-xl) {
