@@ -9,7 +9,7 @@
   padding: 50px 0;
   overflow: hidden;
   @media (min-width: $screen-xl) {
-    padding: 157px 0 66px;
+    padding: 157px 0 59px;
   }
   &__inner {
     @include container;
@@ -43,6 +43,7 @@
     //}
     height: 420px;
     transform: scale(0.85);
+    transition: $transition-time;
     @media (min-width: 800px) {
       height: auto;
     }
@@ -58,6 +59,22 @@
       //height: 100%;
     }
   }
+
+  //.slick-slide {
+  //  transform: translateX(295px) !important;
+  //}
+
+  .slick-track{
+
+    @media (min-width: $screen-md) {
+      //padding: 100px 0;
+    }
+  }
+  //
+  //.slick-center{
+  //  transform: scale(1.5) translateX(146px) !important;
+  //  margin-left: 115px;
+  //}
 
   &__arrow {
     position: absolute;
@@ -87,6 +104,7 @@
         right: -60px;
       }
     }
+
   }
 
   //.slick-list{

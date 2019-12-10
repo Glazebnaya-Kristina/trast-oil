@@ -43,7 +43,7 @@
 
 .input{
   width: 100%;
-  padding: 14px 30px;
+  padding: 12px 30px;
   font: inherit;
   font-weight: 300;
   color: $white;
@@ -54,7 +54,7 @@
   transition: $transition-time;
 
   @media (min-width: $screen-lg) {
-    padding: 15px 45px;
+    padding: 12px 43px;
   }
 
   &:focus{

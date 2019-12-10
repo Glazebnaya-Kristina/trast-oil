@@ -5,7 +5,7 @@
   $block-name:                &; // #{$block-name}__element
 
 
-  margin-top: 100px;
+  margin-top: 70px;
   padding: 72px 0 63px;
   background-color: #f6f6f6;
   background-image: url('../img/about-us/about-us-bg.jpg');
@@ -13,6 +13,9 @@
   background-position: center left;
   @media (min-width: $screen-lg) {
     background-position: center right;
+  }
+  @media (min-width: $screen-lg) {
+    margin-top: 137px;
   }
   &__inner{
     @include container;
