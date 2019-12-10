@@ -3,10 +3,10 @@
 @import "blocks/search";
 @import "blocks/node";
 @import "blocks/content-box";
-//@import "blocks/button-arrow";
+@import "blocks/button-arrow";
 
 // поключения библиотек
-//@import "libs/slick";
+@import "libs/slick";
 // стили шаблонов
 
 // стили шаблонов
@@ -16,6 +16,10 @@
 // поключения секций
 @import "sections/node-selection/node-selection";
 @import "sections/selected-node/solution";
+@import "sections/common/recommendations";
+@import "sections/index/about-us";
+@import "sections/index/reviews";
+@import "sections/index/feedback";
 
 
 //@media (min-width: $screen-sm) {}
