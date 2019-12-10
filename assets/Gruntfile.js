@@ -33,7 +33,8 @@ module.exports = function (grunt) {
                '../markup/js/script.min.js': ['dist/js/script.js'],
                '../markup/js/home.min.js': ['dist/js/home.js'],
                '../markup/js/node-selection.min.js': ['dist/js/node-selection.js'],
-               '../markup/js/selected-node.min.js': ['dist/js/selected-node.js']
+               '../markup/js/selected-node.min.js': ['dist/js/selected-node.js'],
+               '../markup/js/field-selection.min.js': ['dist/js/field-selection.js']
             }
          }
       },
