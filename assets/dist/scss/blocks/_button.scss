@@ -135,6 +135,16 @@
   background-color: $white;
   box-shadow: 1.236px 3.804px 17.22px 3.78px rgba(12, 11, 13, 0.12);
   border-radius: 50%;
+  &:hover,
+  &:focus{
+    outline: none;
+    span{
+      border-color: $color-red;
+    }
+    i{
+      color: $color-red;
+    }
+  }
   @media (min-width: $screen-md) {
     padding: 10px;
   }
@@ -150,6 +160,7 @@
     height: 30px;
     border: 1px solid $black;
     border-radius: 50%;
+    transition: $transition-time;
     @media (min-width: $screen-md) {
       width: 60px;
       height: 60px;
@@ -159,6 +170,7 @@
   i{
     display: flex;
     font-size: 15px;
+    transition: $transition-time;
     @media (min-width: $screen-md) {
       font-size: 25px;
     }
