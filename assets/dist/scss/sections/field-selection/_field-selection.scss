@@ -8,7 +8,7 @@
 
   padding: 50px 0;
   @media (min-width: $screen-xl) {
-    padding: 70px 0 0;
+    padding: 70px 0 97px;
   }
   &__inner{
     @include container;
@@ -67,5 +67,10 @@
       }
     }
   }
+  &__accordeon{
+    margin-top: 50px;
+    @media (min-width: $screen-xl) {
+      margin-top: 86px;
+    }
+  }
 }
-

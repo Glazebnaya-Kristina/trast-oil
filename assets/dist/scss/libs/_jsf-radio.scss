@@ -7,7 +7,6 @@
   overflow: hidden;
   cursor: default;
   background: #fff;
-  //border: 1px solid $color-blue;
   height: 17px;
   width: 17px;
   border-radius: 50%;
@@ -25,18 +24,6 @@
   top: 50%;
   transform: translate(-50%, -50%);
   transition: $transition-time;
-  //&:before{
-  //  @include pseudo;
-  //  content: '\e82a';
-  //  font-family: "fontello", serif;
-  //  font-size: 10px;
-  //  top: 50%;
-  //  left: 50%;
-  //  transform: translate(-50%, -50%);
-  //  line-height: 10px;
-  //  //color: $color-blue;
-  //  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=0.7071067811865467, M21=-0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
-  //}
 }
 .jcf-radio input[type="radio"] {
   position: absolute;
@@ -48,7 +35,6 @@
   top: 0;
 }
 .jcf-radio.jcf-checked span {
-  //display:block;
   background-color: $color-red;
 
 }
