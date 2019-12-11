@@ -8,7 +8,7 @@
   padding: 50px 0;
   overflow: hidden;
   @media (min-width: $screen-xl) {
-    padding: 113px 0 65px;
+    padding: 113px 0 62px;
   }
   &__inner{
     @include container;
@@ -105,10 +105,10 @@
   }
   &__arrow {
     position: absolute;
-    top: 45%;
+    top: 43%;
     font-size: 25px;
     @media (min-width: $screen-xl) {
-      font-size: 35px;
+      font-size: 32px;
     }
 
     &--left {

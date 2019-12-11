@@ -1,7 +1,12 @@
 $(document).ready(function () {
-   $('.accordeon .accordeon__head').click(function () {
-      $(this).toggleClass('accordeon__head--active').next().slideToggle();
-      $('.accordeon .accordeon__head').not(this).removeClass('accordeon__head--active').next().slideUp();
+   // $('.accordeon .accordeon__wrapper-icon').click(function () {
+   //    $(this).toggleClass('accordeon__head--active').next().slideToggle();
+   //    $('.accordeon .accordeon__wrapper-icon').not(this).removeClass('accordeon__head--active').next().slideUp();
+   // });
+
+   $('.accordeon .accordeon__wrapper-icon').click(function () {
+      $(this).toggleClass('accordeon__head--active').parents('.accordeon__item').find('.accordeon__body').slideToggle();
+      $('.accordeon .accordeon__wrapper-icon').not(this).removeClass('accordeon__head--active').parents('.accordeon__item').find('.accordeon__body').slideUp();
    });
 
    $('.recommendations__carousel').slick({
