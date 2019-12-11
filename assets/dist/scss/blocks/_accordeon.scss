@@ -124,14 +124,14 @@
       left: 50%;
       transform: translate(-50%, -50%);
       width: 13px;
-      height: 1.7px;
+      height: 1.5px;
       background-color: $black;
       transition: $transition-time;
     }
 
     &:after {
       transform: translate(-50%, -50%) rotate(-90deg);
-      height: 1.5px;
+      height: 1.3px;
     }
 
     &:hover {
