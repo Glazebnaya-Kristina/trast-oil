@@ -43,6 +43,27 @@
     }
   }
 
+  &__wrapper-text{
+    padding-top: 30px;
+    margin-left: 60px;
+    @media (min-width: $screen-md) {
+      margin-left: 79px;
+      font-size: 16px;
+    }
+    @media (min-width: $screen-xl) {
+      max-width: 927px;
+      padding-top: 35px;
+      margin: 0 auto;
+    }
+  }
+
+  &__text{
+    font-weight: 300;
+    &:not(:first-child){
+      margin-top: 15px;
+    }
+  }
+
   &__wrapper-content{
     margin-bottom: 20px;
     @media (min-width: $screen-md) {

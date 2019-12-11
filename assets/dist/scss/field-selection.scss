@@ -2,8 +2,6 @@
 // Подключения блоков
 @import "blocks/accordeon";
 @import "blocks/node";
-//@import "blocks/content-box";
-//@import "blocks/button-arrow";
 
 // поключения библиотек
 @import "helper/variables";
@@ -17,11 +15,6 @@
 
 // поключения секций
 @import "sections/field-selection/field-selection";
-//@import "sections/selected-node/solution";
-//@import "sections/common/recommendations";
-//@import "sections/index/about-us";
-//@import "sections/index/reviews";
-//@import "sections/index/feedback";
 
 
 //@media (min-width: $screen-sm) {}
