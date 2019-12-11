@@ -5,8 +5,8 @@ $(document).ready(function () {
       focusOnSelect: true,
       infinite: true,
 
-      prevArrow: '<button type="button" class="button-arrow button-arrow--left recommendations__arrow recommendations__arrow--left"><i class="icon-arrow"></i></button>',
-      nextArrow: '<button type="button" class="button-arrow recommendations__arrow recommendations__arrow--right"><i class="icon-arrow"></i></button>',
+      prevArrow: '<button type="button" class="button-arrow button-arrow--left recommendations__arrow recommendations__arrow--left"><i class="icon-right-open"></i></button>',
+      nextArrow: '<button type="button" class="button-arrow recommendations__arrow recommendations__arrow--right"><i class="icon-right-open"></i></button>',
       responsive: [
          {
             breakpoint: 1434,

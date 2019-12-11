@@ -13,10 +13,10 @@ $(document).ready(function () {
       slidesToShow: 4,
       dots: false,
       // centerMode: true,
-      focusOnSelect: true,
+      // focusOnSelect: true,
       infinite: true,
-      prevArrow: '<button type="button" class="button-arrow button-arrow--left certificates__arrow certificates__arrow--left"><i class="icon-arrow"></i></button>',
-      nextArrow: '<button type="button" class="button-arrow certificates__arrow certificates__arrow--right"><i class="icon-arrow"></i></button>',
+      prevArrow: '<button type="button" class="button-arrow button-arrow--left certificates__arrow certificates__arrow--left"><i class="icon-right-open"></i></button>',
+      nextArrow: '<button type="button" class="button-arrow certificates__arrow certificates__arrow--right"><i class="icon-right-open"></i></button>',
       responsive: [
          {
             breakpoint: 1024,
