@@ -29,6 +29,12 @@
   &__list{
     @include ul-reset;
   }
+
+  &--small{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .label {
@@ -63,6 +69,17 @@
 
   @include placeholder{
     color: $white;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  &--white{
+    background-color: $white;
+    border: 1px solid #d7d7d7;
+    height: 48px;
+    @include placeholder{
+      color: #141225;
+      font-size: 18px;
+    }
   }
 }
