@@ -88,6 +88,8 @@ $(document).ready(function () {
       centerMode: true,
       centerPadding: '0',
       variableWidth: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
       dots: true,
       appendDots:$(".main-banner__dots"),
       dotsClass: 'main-banner__dots',

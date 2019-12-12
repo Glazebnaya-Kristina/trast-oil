@@ -2,7 +2,6 @@ $(document).ready(function () {
    $('.recommendations__carousel').slick({
       slidesToShow: 3,
       dots: false,
-      focusOnSelect: true,
       infinite: true,
 
       prevArrow: '<button type="button" class="button-arrow button-arrow--left recommendations__arrow recommendations__arrow--left"><i class="icon-right-open"></i></button>',

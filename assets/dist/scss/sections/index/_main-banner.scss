@@ -18,7 +18,8 @@
     }
     @media (min-width: $screen-xl) {
       margin-left: 126px;
-      height: 569px;
+      //height: 569px;
+      height: 568px;
     }
     @media (min-width: 1600px) {
       margin-left: auto;
@@ -36,10 +37,16 @@
       width: 179%;
     }
     @media (min-width: $screen-lg) {
-      width: 185%;
+      //width: 185%;
+      //width: 168%;
+      width: 178%;
     }
+    //@media (min-width: 1100px) {
+    //  width: 168%;
+    //}
     @media (min-width: $screen-xl) {
-      width: 175%;
+      //width: 175%;
+      width: 168%;
     }
     @media (min-width: 1600px) {
       width: 159%;
@@ -49,13 +56,19 @@
   .slick-center {
     transform: scale(1.025);
     margin-top: 0;
-    .main-banner__content {
+    .main-banner__content-wrapper {
       opacity: 1;
+    }
+    .main-banner__content{
+      &:after,
+      &:before{
+        opacity: 1;
+      }
     }
 
-    .carousel-3D__description {
-      opacity: 1;
-    }
+    //.carousel-3D__description {
+    //  opacity: 1;
+    //}
   }
 
   .slick-track {
@@ -85,43 +98,151 @@
       }
     }
   }
+  &__img-bottle{
+    position: absolute;
+    //right: 21%;
+    //bottom: -34px;
+    z-index: 1;
+    //height: 109px;
+    opacity: 0;
+    @media (min-width: $screen-md) {
+      right: 13%;
+      bottom: -10px;
+      height: 115px;
+      opacity: 1;
+    }
+    @media (min-width: $screen-lg) {
+      height: 270px;
+      right: 22%;
+      bottom: -20px;
+    }
+    @media (min-width: $screen-xl) {
+      right: 21%;
+      bottom: -34px;
+      height: 409px;
+    }
+  }
 
-  &__item {
-    margin-right: -15px;
-    margin-left: 40px;
-    transition: $transition-time;
-    outline: none;
-    transform: scale(.82);
-    width: 500px;
+  &__content {
+    position: relative;
     padding: 26px 10px 25px;
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
+    transition: $transition-time;
+    margin-bottom: 30px;
 
-    .main-banner__content {
+    &:after{
+      @include pseudo;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($white, .65);
+      transition: $transition-time;
       @media (min-width: $screen-md) {
         opacity: 0;
       }
     }
 
+    &:before{
+      @include pseudo;
+      z-index: 1;
+      top: 0;
+      right: -14%;
+      height: 100%;
+      width: 40%;
+      background-color: #ff173a;
+      transform: skew(-13deg);
+      transform-origin: 0 0;
+      transition: $transition-time;
+      @media (min-width: $screen-md) {
+        opacity: 0;
+      }
+    }
     @media (min-width: $screen-md) {
-      margin: 0 15px;
       padding: 26px 75px 25px;
     }
     @media (min-width: $screen-lg) {
-      width: 700px;
       padding: 26px 75px 75px;
 
     }
     @media (min-width: $screen-xl) {
+      //padding: 111px 96px 96px;
+      padding: 111px 96px 59px;
+    }
+  }
+
+  &__content-wrapper{
+    @media (min-width: $screen-md) {
+      opacity: 0;
+    }
+  }
+
+  &__item {
+    //position: relative;
+    margin-right: -15px;
+    margin-left: 40px;
+    padding-bottom: 15px;
+    transition: $transition-time;
+    outline: none;
+    transform: scale(.82);
+    width: 500px;
+    //padding: 26px 10px 25px;
+    //background-repeat: no-repeat;
+    //background-position: bottom center;
+    //background-size: cover;
+    overflow: hidden;
+
+    //&:after{
+    //  @include pseudo;
+    //  top: 0;
+    //  left: 0;
+    //  z-index: -1;
+    //  width: 100%;
+    //  height: 100%;
+    //  background-color: rgba($white, .65);
+    //}
+    //
+    //&:before{
+    //  @include pseudo;
+    //  top: 0;
+    //  right: -14%;
+    //  height: 100%;
+    //  width: 36%;
+    //  background-color: #ff173a;
+    //  transform: skew(-13deg);
+    //  transform-origin: 0 0;
+    //}
+
+    //.main-banner__content {
+    //  @media (min-width: $screen-md) {
+    //    opacity: 0;
+    //  }
+    //}
+
+    @media (min-width: $screen-md) {
+      margin: 0 15px;
+      //padding: 26px 75px 25px;
+    }
+    @media (min-width: $screen-lg) {
+      width: 700px;
+      //padding: 26px 75px 75px;
+
+    }
+    @media (min-width: $screen-xl) {
       width: 923px;
-      margin: 0 -15px;
-      margin-top: -34px;
-      padding: 111px 96px 96px;
+      margin: 0 7px;
+      //margin-top: -34px;
+      margin-top: -6px;
+      transform: scale(0.9);
+      //padding: 111px 96px 96px;
     }
   }
 
   &__button {
+    z-index: 1;
     margin-top: 30px;
     @media (min-width: $screen-lg) {
       margin-top: 91px;
@@ -129,11 +250,15 @@
   }
 
   &__text {
+    z-index: 1;
     color: $color-red;
     font-size: 14px;
+    position: relative;
   }
 
   &__decsription {
+    position: relative;
+    z-index: 1;
     max-width: 421px;
     color: $color-title;
     font-size: 22px;
@@ -148,10 +273,6 @@
       font-size: 60px;
       line-height: 70px;
     }
-  }
-
-  &__content {
-    transition: $transition-time;
   }
 
   &__carousel-wrapper{

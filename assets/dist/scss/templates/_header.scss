@@ -87,4 +87,9 @@
       border-bottom: 1px solid $color-red;
     }
   }
+
+  // класс для подсвечивание активного пункта меню
+  .active{
+    color: $color-red;
+  }
 }

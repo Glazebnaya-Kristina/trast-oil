@@ -9,7 +9,7 @@
   padding: 50px 0;
   overflow: hidden;
   @media (min-width: $screen-xl) {
-    padding: 157px 0 59px;
+    padding: 157px 0 33px;
   }
   &__inner {
     @include container;
@@ -22,28 +22,23 @@
       margin-left: -28px;
     }
     @media (min-width: $screen-xl) {
-      margin-top: 55px;
-      margin-left: -48px;
+      //margin-top: 55px;
+      margin-top: 28px;
+      //margin-left: -48px;
+      margin-left: -56px;
     }
   }
 
-  //.slick-initialized .slick-slide .slick-active{
-  //  //&:nth-child(4){
-  //  //  transform: scale(1.2);
-  //  //}
-  //  transform: scale(1.2);
-  //}
-
   &__item {
-    //.slick-active {
-    //  //transform: scale(1.2);
-    //  &:nth-child(4){
-    //    transform: scale(1.2);
-    //  }
-    //}
     height: 420px;
-    transform: scale(0.85);
+    //transform: scale(0.85);
+    transform: scale(0.79);
     transition: $transition-time;
+    cursor: pointer;
+    outline: none;
+    &:hover{
+      transform: scale(1.1);;
+    }
     @media (min-width: 800px) {
       height: auto;
     }
@@ -53,28 +48,14 @@
       @media (min-width: 800px) {
         height: auto;
       }
-      //object-fit: cover;
-      //object-position: center center;
-      //width: 100%;
-      //height: 100%;
     }
   }
 
-  //.slick-slide {
-  //  transform: translateX(295px) !important;
-  //}
 
-  .slick-track{
-
-    @media (min-width: $screen-md) {
-      //padding: 100px 0;
-    }
+  .slick-list{
+    padding: 25px 15px;
+    margin: 0 -15px;
   }
-  //
-  //.slick-center{
-  //  transform: scale(1.5) translateX(146px) !important;
-  //  margin-left: 115px;
-  //}
 
   &__arrow {
     position: absolute;
@@ -101,26 +82,9 @@
         right: -25px;
       }
       @media (min-width: $screen-xl) {
-        right: -60px;
+        //right: -60px;
+        right: -30px;
       }
     }
   }
-
-  //.slick-list{
-  //  margin-left: -19px;
-  //}
 }
-
-
-//.certificates__item .slick-slide .slick-active {
-//  &:nth-of-type(2) {
-//    img {
-//
-//      transform: scale(1.2);
-//    }
-//  }
-//
-//  //&:nth-child(4) {
-//  //  transform: scale(1.2);
-//  //}
-//}
