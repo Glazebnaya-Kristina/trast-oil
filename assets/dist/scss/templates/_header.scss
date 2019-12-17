@@ -9,6 +9,7 @@
   padding: 8px 0;
   color: $white;
   background-color: $colo-dark-2;
+  transition: $transition-time;
   &__inner{
     @include container;
     display: flex;
@@ -91,5 +92,36 @@
   // класс для подсвечивание активного пункта меню
   .active{
     color: $color-red;
+  }
+
+  &--fixed{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba($colo-dark-2, .9);
+  }
+
+  &--fixed-mob{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba($colo-dark-2, .9);
+    .navigation__wrapper{
+      display: none;
+    }
+  }
+
+  &--fixed-tabl{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba($colo-dark-2, .9);
+    .header__clock,
+    .header__info-block{
+      display: none;
+    }
   }
 }
