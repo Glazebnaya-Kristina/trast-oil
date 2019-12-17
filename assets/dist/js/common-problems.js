@@ -44,7 +44,6 @@ $(document).ready(function () {
    $('.node-carousel__carousel').slick({
       slidesToShow: 4,
       dots: false,
-      focusOnSelect: true,
       infinite: true,
       prevArrow: '<button type="button" class="button-arrow button-arrow--left node-carousel__arrow node-carousel__arrow--left"><i class="icon-right-open"></i></button>',
       nextArrow: '<button type="button" class="button-arrow node-carousel__arrow node-carousel__arrow--right"><i class="icon-right-open"></i></button>',

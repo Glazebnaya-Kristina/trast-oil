@@ -20,7 +20,19 @@
     padding: 0 25px;
     @media (min-width: $screen-xl) {
       margin: 0 -18px;
-      //padding: 0 25px;
+    }
+  }
+
+  &__item{
+    outline: none;
+    a{
+      display: block;
+      &:focus{
+        outline: none;
+      }
+      &:hover{
+        color: $color-red;
+      }
     }
   }
 
@@ -57,7 +69,6 @@
   &__arrow {
     position: absolute;
     top: 34%;
-    //transform: translateY(-50%);
     font-size: 25px;
     @media (min-width: $screen-xl) {
       font-size: 32px;
@@ -65,9 +76,6 @@
 
     &--left {
       left: 0;
-      //@media (min-width: 800px) {
-      //  left: -25px;
-      //}
       @media (min-width: $screen-xl) {
         left: -56px;
       }
@@ -75,9 +83,6 @@
 
     &--right {
       right: 0;
-      //@media (min-width: 800px) {
-      //  right: -25px;
-      //}
       @media (min-width: $screen-xl) {
         right: -56px;
       }
