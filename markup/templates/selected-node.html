@@ -446,7 +446,7 @@
             </label>
                         </div>
                         <p class="button-double request__button">
-                            <button class="button-double__button" type="submit">Отправить</button>
+                            <button class="button-double__button js-open-modal" type="submit" data-modal="thanks">Отправить</button>
                             <i class="icon-play-button"></i>
                         </p>
                     </form>
@@ -454,6 +454,18 @@
             </div>
         </div>
 
+        <!-- Модальное окно Спасибо -->
+        <div class="popup thanks" data-modal="thanks">
+            <button class="modals__close close" type="button">
+      <span>Закрыть модальное окно</span>
+    </button>
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <h3 class="title title--line title--center modal__title">Спасибо за заявку</h3>
+                    <p>В ближайшее время с Вами свяжется наш менеджер!</p>
+                </div>
+            </div>
+        </div>
 
         <!-- Подложка под модальным окном -->
         <div class="modal__overlay modal__overlay--opened js-overlay-modal"></div>

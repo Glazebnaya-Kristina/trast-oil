@@ -108,5 +108,40 @@
       }
     }
   }
+
+  .thanks{
+    @media (min-width: $screen-md) {
+      padding-bottom: 100px;
+    }
+    .modal__dialog{
+      height: 100%;
+      @media (min-width: $screen-md) {
+        height: auto;
+      }
+    }
+    .modal__content{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      @media (min-width: $screen-md) {
+        height: auto;
+      }
+    }
+    p{
+      margin-top: 20px;
+      color: #141225;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 300;
+      @media (min-width: $screen-lg) {
+        font-size: 25px;
+      }
+      @media (min-width: $screen-xl) {
+        font-size: 30px;
+      }
+    }
+  }
 }
 

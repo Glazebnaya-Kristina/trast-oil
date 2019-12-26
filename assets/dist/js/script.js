@@ -109,6 +109,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
    }); // end foreach
 
+
+   // закрытие модального окна заявкой
+   var btnRegistration = document.querySelectorAll('button[data-modal="thanks"]');
+
+   btnRegistration.forEach(function (item) {
+      item.addEventListener('click', function (e) {
+         e.preventDefault();
+         var modalRegistr = document.querySelector('.popup[data-modal="request"]');
+         modalRegistr.classList.remove('popup--opened');
+      });
+
+   });
+
+
    closeButtons.forEach(function (item) {
 
       item.addEventListener('click', function (e) {
